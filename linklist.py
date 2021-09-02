@@ -55,5 +55,13 @@ class LinkedList:
             curr = curr.next
         return data
 
+    def to_list_ith(self, i=0):
+        data = []
+        curr = self.head
+        while curr is not None:
+            data.append(curr.data[i])
+            curr = curr.next
+        return data
+
     def __repr__(self):
         return self.__str__()
